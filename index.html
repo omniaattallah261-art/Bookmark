@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Bookmark</title>
+  <link rel="shortcut icon" href="./image/favicon-16x16.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <div class="bookmark">
+    <div class="container">
+      <div class="title d-flex justify-content-center align-content-center">
+        <h1>Bookmarker</h1>
+      </div>
+      <header class="mt-4 d-flex flex-row justify-content-center align-items-baseline text-center">
+        <i class="fa-solid fa-bookmark fs-4"></i>
+        <h2> Bookmark your favorite sites </h2>
+        <i class="fa-solid fa-bookmark fs-4"></i>
+      </header>
+    <!--start of inputs-->
+
+      <div class="content">
+        <div class="container">
+          <div class="row">
+
+            <div class="mb-3 mt-4">
+              <label for="siteName" class="form-label fw-bold "> <i class="fa-solid fa-window-restore"></i> Site
+                Name</label>
+              <input oninput="validateInputs(this)" type="text" class="form-control" id="siteName" placeholder="Bookmark Name">
+            </div>
+
+
+            <div class="mb-3 mt-3">
+              <label for="siteURL" class="form-label fw-bold "> <i class="fa-solid fa-link"></i> Site URL</label>
+              <input oninput="validateInputs(this)" type="text" class="form-control" id="siteURL" placeholder="Website URL">
+            </div>
+
+          </div>
+
+          <div class=" submit d-flex justify-content-center align-content-center"> <button
+              class=" btn px-5 mt-2 mb-4" id="submit" onclick="enterSite()" >Submit</button> </div>
+
+        </div>
+      </div>
+    <!--end of inputs-->
+
+
+    <!--start of tabel-->
+      <div class="container">
+        <div class="row">
+          <table class="table mt-4 text-center">
+            <thead>
+              <tr>
+                <th scope="col">Index</th>
+                <th scope="col">Website Name</th>
+                <th scope="col">Visit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody id="data">
+             
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!--end of tabel-->
+
+
+    <!--start of modal-->
+
+   <div id="modal" class="modal d-none">
+    <div class="modal-body">
+      <div class="modal-head d-flex justify-content-between mt-3 mb-4 px-2">
+    <div class="icons">
+      <i class="fa-solid fa-circle fs-5 red"></i>
+      <i class="fa-solid fa-circle fs-5 yellow"></i>
+      <i class="fa-solid fa-circle fs-5 green"></i>
+    </div>
+     <div class="close">
+        <button onclick="closeModal()" class="border-0 bg-body">
+        <i class="fa-solid fa-xmark fs-4"></i></button>
+      </div>
+      </div>
+      <div class="modal-card px-2">
+        <h4 class="mb-4" >Site Name or Url is not valid, Please follow the rules below :</h4>
+        <h5 class="text-nowrap mb-4"> <i class="fa-regular fa-circle-right"></i> Site name must contain at least 3 characters</h5>
+        <h5 class=" mb-3"> <i class="fa-regular fa-circle-right"></i> Site URL must be a valid one</h5>
+      </div>
+    </div>
+
+   </div>
+
+  
+    <!--end of modal-->
+
+  </div>
+
+
+  <script src="./js/index.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
