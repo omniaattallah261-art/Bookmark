@@ -93,7 +93,7 @@ function deleteSite(index) {
     var text = element.value ;
     var regex = {
        siteName :  /^[A-Za-z0-9\s-]{3,}$/ , 
-       siteURL : /^(https?:\/\/)?(www\.)?[a-zA-Z0-9-]+\.[a-z]{2,}(\S*)?$/
+       siteURL :  /^(https?:\/\/)?([\w-]+\.)+[\w-]{2,}(\/[\w-])$/
     }
     if (regex[element.id].test(text) == true ) {
         element.classList.add ("is-valid");

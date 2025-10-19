@@ -1,0 +1,82 @@
+@media screen and (min-width:10px) and (max-width:320px) {
+    h1 {
+        font-size: 30px;
+    }
+    header h2 {
+        font-size: 15px;
+        text-wrap: nowrap;
+    }
+    .modal-body {
+        width: 90%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .modal-card h4  {
+        font-size:14px;
+    }
+    .modal-card h5 {
+        font-size: 14px;
+    }
+    .visit button , .delete button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        gap: 3px;
+        padding-inline: 5px ;
+    }
+    th ,td {
+        font-size: 10px;
+    }
+    
+}
+@media screen and (min-width:321px) and (max-width:670px) {
+    h1 {
+        font-size: 40px;
+    }
+    header h2 {
+        font-size: 15px;
+        text-wrap: nowrap;
+    }
+    .modal-body {
+        width: 90%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .modal-card h4  {
+        font-size:14px;
+    }
+    .modal-card h5 {
+        font-size: 14px;
+    }
+    .visit button , .delete button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+        font-size: 12px;
+    }
+    
+}
+@media screen and (min-width:671px) and (max-width:920px) {
+    .modal-body {
+        width: 90%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .modal-card h4  {
+        font-size:14px;
+    }
+    .modal-card h5 {
+        font-size: 14px;
+    }
+    .visit button , .delete button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+        font-size: 12px;
+    }
+    
+}
+
