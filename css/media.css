@@ -16,6 +16,9 @@
     }
     .modal-card h5 {
         font-size: 14px;
+        display: flex;
+        gap: 4px;
+        align-items: baseline;
     }
     .visit button , .delete button {
         display: flex;
@@ -27,6 +30,7 @@
     }
     th ,td {
         font-size: 10px;
+        text-wrap: nowrap;
     }
     
 }
